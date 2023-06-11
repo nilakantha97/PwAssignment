@@ -1,0 +1,124 @@
+1. 
+
+import java.time.*;
+public class DateTime {
+public static void main(String[] args) {
+LocalDate date = LocalDate.now();
+System.out.println(date);
+LocalTime time=LocalTime.now();
+System.out.println(time);
+}
+}
+
+2. 
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+public class DateToString {
+public static void main(String[] args) {
+LocalDate date = LocalDate.of(2023, 4, 4);
+DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+String formattedDate = date.format(formatter);
+System.out.println("Formatted Date: " + formattedDate);
+}
+}
+
+3.
+
+Collections and streams are both used in Java for working with groups of objects, but they have different characteristics and purposes.
+
+Collections:
+
+->Collections are data structures that store and manage a group of objects.
+->They provide methods for adding, removing, and accessing elements.
+->Collections are typically used to store and manipulate a fixed set of objects.
+->They allow random access to elements based on their index.
+Examples of collections in Java include ArrayList, LinkedList, HashSet, TreeSet, etc.
+
+Collections
+
+Output:
+Apple
+Google
+Microsoft
+import java.io.*;
+import java.util.*;
+class Main {
+public static void main(String[] args)
+{
+List<String> CompanyList = new ArrayList<>();
+CompanyList.add("Google");
+CompanyList.add("Apple");
+CompanyList.add("Microsoft");
+Comparator<String> com = (String o1, String o2) -> o1.compareTo(o2);
+Collections.sort(CompanyList, com);
+for (String name : CompanyList) {
+System.out.println(name);
+}
+}
+}
+
+Streams:
+
+->Streams represent a sequence of elements that can be processed in a pipeline fashion.
+->They provide a functional programming-style approach for operating on data.
+->Streams do not store elements; they process elements from a data source (e.g., a collection, an array, or I/O channel) on-demand.
+->Streams can perform operations like filtering, mapping, sorting, and aggregating data.
+->They are typically used for data processing and transformation.
+Examples of stream operations include filter, map, reduce, collect, etc.
+
+Ex: Streams
+import java.io.*;
+import java.util.*;
+class Demo {
+public static void main(String[] args)
+{
+List<String> CompanyList = new ArrayList<>();
+CompanyList.add("Google");
+CompanyList.add("Apple");
+CompanyList.add("Microsoft");
+CompanyList.stream().sorted().forEach(
+System.out::println);
+}
+}
+
+4.
+
+We can use enum to define a group of named constants.
+Enums are used to represent a collection of related constants that have a common purpose. Each constant in an
+enum is an instance of the enum type, and they are typically defined as public static final fields.
+Here's an example of how to define an enum in Java:
+
+class EnumDemo{
+public enum DayOfWeek {
+MONDAY,
+TUESDAY,
+WEDNESDAY,
+THURSDAY,
+FRIDAY,
+SATURDAY,
+SUNDAY
+}
+public static void main(String args[]){
+for(DayOfWeek d:DayOfWeek.values())
+System.out.println(d);
+}
+}
+
+Here we define an enum called "DayOfWeek" that represents the days of the week. The enum has seven
+constants, each representing a day of the week. The constants are defined in all uppercase letters by convention.
+
+5.
+
+built-in annotations in Java:
+@Override
+@Deprecated
+@SuppressWarnings
+@FunctionalInterface
+@Retention
+@Target
+@Documented
+@Inherited
+These built-in annotations in Java are used to provide additional information to the Java compiler and other
+tools. They help improve code readability, maintainability, and safety by enforcing specific rules and behaviours
+in Java code.
