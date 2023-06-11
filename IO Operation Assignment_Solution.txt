@@ -1,0 +1,48 @@
+1. A stream can be defined as a sequence of data. The InputStream is used to read data from a source and
+the MutputStream is used for writing data to a destination.
+
+2. The methods of OutputStream are :
+write() - writes the specified byte to the output stream
+write(byte[] array) - writes the bytes from the specified array to the output stream
+flush() - forces to write all data present in the output stream to the destination
+close() - closes the output stream
+
+3. Serialization is the process of converting an object into a stream of bytes to transfer it over a network or to
+store it in a file or database. In Java, serialization is done by implementing the Serializable interface.
+
+4. The Serializable interface in Java is a marker interface that has no methods. It is used to mark classes that
+can be serialized, meaning their object instances can be converted into a stream of bytes.
+
+5. Deserialization is the process of converting a stream of bytes back into an object instance. This is done
+after an object has been serialized.
+
+6. Serialization is achieved in Java by implementing the Serializable interface. When an object is serialized, its
+state is converted into a stream of bytes, which can then be transferred over a network or stored in a file or
+database.
+
+7. Deserialization is achieved in Java by reading a stream of bytes and using them to recreate the original
+object instance. This is done by calling the readMbject() method of an MbjectInputStream instance.
+
+8. Mark member variables as static or transient, and those member variables will no more be a part of
+Serialization.
+
+9. The following classes are available in the Java IM API and are important to work with files in Java.
+File
+RandomAccessFile
+FileInputStream
+FileReader
+FileMutputStream
+FileWriter
+
+
+10. The Java Externalizable and Serialization interfaces are both used for object serialization, but they have some key differences in terms of control and flexibility. Here are the main differences between Externalizable and Serialization:
+
+Control over Serialization: When a class implements the Serializable interface, the serialization process occurs automatically, and all the non-transient fields are serialized by default. However, when a class implements the Externalizable interface, it has explicit control over the serialization and deserialization process. The class needs to implement the readExternal() and writeExternal() methods to define custom serialization and deserialization logic.
+
+Custom Serialization: With the Serializable interface, the serialization process is handled automatically, and the entire object graph is serialized. The class does not have direct control over the serialization process. On the other hand, with the Externalizable interface, the class has full control over what gets serialized and can customize the serialization process by implementing the readExternal() and writeExternal() methods.
+
+Serialization Format: Serializable interface uses a default serialization format, which is binary and platform-dependent. It serializes the objects into a binary stream. Externalizable, on the other hand, allows for customization of the serialization format. The class can implement custom logic to serialize and deserialize objects in a specific format, such as XML or JSON.
+
+Serialization Size: The serialization size of objects that implement the Externalizable interface is generally smaller compared to objects that implement Serializable. This is because Externalizable allows for more control over the serialization process, allowing developers to exclude unnecessary fields or use a more compact serialization format.
+
+Performance: Externalizable serialization is generally faster than Serializable serialization. Since Externalizable provides explicit control over the serialization process, it can exclude unnecessary fields or perform more optimized serialization logic. Serializable serialization, being automatic and handling the entire object graph, may include more data and perform additional processing, potentially affecting performance.
