@@ -1,0 +1,106 @@
+1. Encapsulation is a mechanism that allows data to be hidden and protected from external access. It is called data hiding because it hides the implementation details of an object from the outside world. The internal workings of the object are kept private, and the only way to access them is through methods that have been defined to provide controlled access to the data.
+
+2. Important features of encapsulation are :
+
+->Data hiding: Encapsulation allows the data of an object to be hidden from other objects and the outside world, preventing unauthorized access and modification of the data.
+
+->Access control: Access to the data and methods of an object can be controlled by defining public, private, and protected access modifiers for the members of a class.
+
+->Encapsulation enhances security and maintainability: Encapsulation provides security by ensuring that the data of an object is accessed and modified in a controlled manner. It also enhances maintainability by allowing the implementation details of a class to be changed without affecting other parts of the program.
+
+->Encapsulation improves code reusability: Encapsulation allows objects to be used as building blocks for more complex systems, improving code reusability and reducing code duplication.
+
+3. Getter and setter methods are a way to encapsulate data by providing controlled access to the private data members of a class. Getters are methods that are used to retrieve the value of a private data member, while setters are methods used to set the value of a private data member
+
+Example :-
+---------
+
+public class Person {
+    private String name; // private data member
+    
+    public String getName() { // getter method to retrieve the value of name
+        return name;
+    }
+    
+    public void setName(String name) { // setter method to set the value of name
+        this.name = name;
+    }
+}
+
+=> In this example, we have a class named Person with a private data member named name. To access and modify the value of name, we have defined two methods: getName() and setName(String name).
+
+The getName() method is a getter method that returns the value of name, while the setName(String name) method is a setter method that sets the value of name to the passed parameter name.
+
+4. this keyword is a reference to the current object instance, and it is often used to differentiate between class members and method parameters that have the same name.
+
+Example :-
+---------
+public class Person {
+    private String name; // private data member
+    
+    public String getName() { // getter method to retrieve the value of name
+        return name;
+    }
+    
+    public void setName(String name) { // setter method to set the value of name
+        this.name = name; // using this to refer to the class member variable
+    }
+}
+
+5. Advantages of encapsulation:-
+
+-> Data Hiding: Encapsulation allows data to be hidden and accessed only through public methods defined in the class, preventing the direct manipulation of data from outside the class. This ensures data security and maintains data integrity.
+
+-> Modularity: Encapsulation provides a clear separation of concerns by allowing classes to be developed independently, which promotes code modularity, reuse, and maintainability.
+
+-> Code Flexibility: Encapsulation enables developers to change the implementation of a class without affecting the rest of the program. This provides flexibility in code design, as changes made to the class are not propagated throughout the program, thereby reducing the possibility of errors.
+
+6. Encapsulation in Java can be achieved by using access modifiers (public, private, protected) to control the access to class members (variables and methods) from outside the class. The class members can be marked as private to hide them from other classes and can only be accessed through public methods defined in the class. 
+
+Example :-
+---------
+
+public class BankAccount {
+    private double balance; // private data member
+    
+    public BankAccount(double balance) {
+        this.balance = balance;
+    }
+    
+    public double getBalance() { // public getter method
+        return balance;
+    }
+    
+    public void deposit(double amount) { // public method to deposit money
+        balance += amount;
+    }
+    
+    public void withdraw(double amount) { // public method to withdraw money
+        if (amount <= balance) {
+            balance -= amount;
+        } else {
+            System.out.println("Insufficient balance");
+        }
+    }
+}
+
+
+--------------
+
+public class Main {
+    public static void main(String[] args) {
+        BankAccount account = new BankAccount(1000);
+        double balance = account.getBalance();
+        System.out.println("Initial balance: " + balance); // output: Initial balance: 1000.0
+        
+        account.deposit(500);
+        balance = account.getBalance();
+        System.out.println("After deposit: " + balance); // output: After deposit: 1500.0
+        
+        account.withdraw(2000);
+        balance = account.getBalance();
+        System.out.println("After withdrawal: " + balance); // output: Insufficient balance
+    }
+}
+
+ 

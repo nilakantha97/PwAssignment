@@ -1,0 +1,25 @@
+1. A map is a collection in java that stores data as key-value pairs, where each key is unique.
+
+2. The commonly used implementaions of map in java are Hashmap, Treemap, Linkedhashmap, and concurrenthashmap
+
+3. HashMap is an unordered collection that uses hashing to store the key-value pairs, while TreeMap is a sorted collection that stores the key-value pairs in a sorted order based on the natural order of the keys or a custom comparator.
+
+4. We can check key exists in map on java using the containsKey() method or the get() method.
+
+5. Generics in java are used to provide type safety and reduce code redundancy by allowing the use of generic types. It allows classes, methods, and interfaces to be written generically, without specifying the type of data being used.
+
+6. Benefits of using Generics in java are:
+
+->Type safety
+->Code reusability
+->Improved reusbality
+->Reduced code redundancy
+->Improved performance
+
+7. A generic class in Java is a class that is parameterized with one or more type parameters, allowing it to work with different types of data. It provides a way to create reusable classes and methods that can work with different data types without sacrificing type safety.
+
+8. In Java generics, a type parameter is a placeholder for a specific type that is used in generic class declarations, interfaces, and methods. Type parameters are specified using angle brackets (<>) after the name of the generic class, interface, or method. The type parameter name is typically a single uppercase letter, but it can be any valid identifier.
+
+9. A generic method in Java is a method that is parameterized with one or more type parameters. It allows you to write methods that can operate on different types, providing flexibility and type safety.  The type parameters are specified using angle brackets (<>) before the return type of the method.
+
+10. ArrayList is a non-generic class, while ArrayList<T> is a generic class. ArrayList<T> provided type safety, as it can only store elements of the specified type, whereas ArrayList can store any type of element.

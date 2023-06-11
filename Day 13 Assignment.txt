@@ -1,0 +1,57 @@
+1. The default value of an array in Java depends on the data type of the elements in the array. The default value for each data type is as follows:
+
+Numeric primitive data types (byte, short, int, long, float, double) are set to 0.
+Character primitive data type (char) is set to '\u0000' (the null character).
+Boolean primitive data type (boolean) is set to false.
+Reference data types (e.g., String, Object, and arrays) are set to null.
+
+2. No, you cannot pass a negative number as the size of an array in Java.
+
+3. Arrays are stored in the heap area of the Java Virtual Machine (JVM) memory.
+
+4. Disadvantages of array:
+
+i) Once an array is created, its size cannot be changed dynamically.
+ii) Its stores only homogeneous data elements.
+
+5. An anonymous array in Java is an array that is created without giving it a specific name. It's typically used when you need to pass an array as an argument to a method, or when you need to create an array that will only be used once and doesn't need to be referenced later in the program.
+
+Example : 
+
+public class Anonymous_Array {
+    public static void main(String[] args) {
+        // Anonymous array
+        System.out.println("Sum of numbers: " + sum(new int[] { 1, 2, 3, 4, 5 }));
+    }
+
+    static int sum(int[] numbers) {
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        return sum;
+    }
+}
+
+6. We can traverse an array in different ways :
+	i) By using for loop
+	ii) By using while loop
+	iii) By using do-while loop
+	iv) By using for-each loop
+
+7. 
+
+-> length is a property of arrays in Java and represents the number of elements in the array. 
+
+Example: 
+
+int[] array = {1, 2, 3, 4, 5};
+int length = array.length; // length = 5
+
+
+-> length() is a method of the String class and returns the number of characters in a string.
+
+Example : 
+
+String str = "Hello";
+int length = str.length(); // length = 5

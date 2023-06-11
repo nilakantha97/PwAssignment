@@ -1,0 +1,53 @@
+1. Conditional operators are used to evaluate a condition that's applied to one or two boolean expressions. The result of the evaluation is either true or false.
+
+conditional operators:
+
+&&   the logical AND operator.
+ ||   the logical OR operator.
+ ?:   the ternary operator.
+
+2. Types of operators based on the number of operands are :
+Unary operators
+Binary operators
+Ternary operator
+
+3. The Java switch statement is used to execute one statement from multiple conditions. 
+
+4. In Java, the priority levels of arithmetic operations are as follows:
+
+Parentheses ( )
+Exponentiation (^)
+Multiplication (*), Division (/), and Modulus ( % )
+Addition (+), and Subtraction (-)
+Operations within the same priority level are performed from left to right.
+
+5.Conditional statements are used in programming to control the flow of execution based on the evaluation of specific conditions. They allow a program to execute different code paths based on whether a certain condition is met.
+The if-else statement is a Conditional statement used to test a condition and execute a block of code if the condition is true and another block of code if the condition is false.
+
+6. Syntax of if else statement : 
+
+if(condition){
+	//statements to be executed if condition is true
+}
+else{
+	//statements to be executed if condition is false
+}
+
+7. In Java, there are three types of iterative statements :
+	i) for loop
+	ii) while loop
+	iii)do-while loop
+
+8. In for loop the condition is evaluated before each iteration. If the condition is false, the loop will not execute even once.
+
+In do while loop the condition is evaluated after each iteration. This means that the code within the loop is guaranteed to execute at least once.
+
+9. 
+
+public class PrintNumbers {
+   public static void main(String[] args) {
+      for (int i = 1; i <= 10; i++) {
+         System.out.println(i);
+      }
+   }
+}

@@ -1,0 +1,17 @@
+1. A Computer is a machine that accepts information and processes it in accordance with a prrogramme, piece of software,or set of instructions that specify how the inormation should be handled.
+
+2. RAM is a volatile memory, it doesn't store instructions or data permanently. Information is kept in RAM while the computer is running, but it is erased when the machine is powered off.
+
+3. Data are stored in RAM (Random Access Memory), ROM (Read-Only Memory), Hard disk/SSD in a computer.
+
+4. Keyboard is that input device used to type text and numbers on a document in the computer system.
+
+5. Output devices are computer components that display or transmit information from the computer to the user. 
+Examples: Monitor, Printer, Headphones, Projector
+
+6. Mouse is the input device that allows a user to move the cursor or pointer on the screen.
+
+7. The only type of language that a computer can understand directly without a translation program is machine language, also known as assembly language or binary code. Machine language consists of binary digits (1s and 0s) that represent instructions for the computer's processor to execute.
+
+8. Input devices are computer components that allow a user to input information into the computer. 
+Examples :Keyboard , Mouse, Scanner, Joystick 

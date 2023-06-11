@@ -1,0 +1,47 @@
+1. The Collection Framework in Java is a unified architecture that provides a set of interfaces, implementations, and algorithms to handle collections of objects. It provides a way to store, manipulate and retrieve a group of objects that are represented as a single unit. The framework consists of several interfaces like List, Set, Queue, Map, etc., and their implementations like ArrayList, HashSet, PriorityQueue, HashMap, etc.
+
+2. Differences between ArrayList and LinkedList are as follows:
+
+-> ArrayList is internally implemented as an array, whereas LinkedList is implemented as a doubly linked list.
+-> Insertion and deletion are faster in LinkedList as compared to ArrayList. This is because in LinkedList, only the pointers need to be changed, whereas in ArrayList, the elements need to be shifted to accommodate the new element.
+-> Random access is faster in ArrayList because it allows direct access to the elements using the index, whereas in LinkedList, we need to traverse the list to access the element at a particular index.
+-> Iterator performance is better in LinkedList as compared to ArrayList because LinkedList provides an iterator that does not need to traverse the entire list to reach the desired element.
+
+3. Differences between Iterator and listIterator are as follows:
+
+-> Iterator is a simple interface for iterating over a collection of elements, while ListIterator is a more powerful interface for iterating over a list of elements.
+-> Iterator allows for only forward traversal of a collection, while ListIterator allows for both forward and backward traversal of a list.
+-> Iterator does not provide indexing, while ListIterator provides indexing of the current position in the list.
+-> Iterator only allows removing elements from the collection, while ListIterator allows adding, removing, and setting elements in the list.
+
+4. Differences between Iterator and Enumeration are as follows:
+
+-> Iterator is available for all Java collections since JDK 1.2 while Enumeration is a legacy interface and is only available for older Java collections such as Vector and Hashtable.
+
+-> Iterator has three main methods (hasNext(), next(), remove()) while Enumeration has only two (hasMoreElements(), nextElement()).
+
+-> Iterator is a bidirectional iterator and it can traverse the collection in both forward and backward direction while Enumeration is a unidirectional iterator and can only traverse the collection in the forward direction.
+
+-> Iterator allows modification of the underlying collection while iterating, while Enumeration does not allow any modification.
+
+5. Differences between List and Set are as follows:
+
+->  List allows duplicates while Set does not allow duplicates. If you add a duplicate element to a Set, it will simply replace the existing element. On the other hand, List can contain any number of duplicate elements.
+-> List maintains the insertion order of elements, while Set does not guarantee the order of elements. However, some implementations of Set like LinkedHashSet maintain the insertion order.
+-> List supports index-based operations like get(), set(), add(), and remove(), which allow you to perform operations at a specific position in the List. Set does not support index-based operations because it does not maintain the order of elements.
+-> List has several implementations such as ArrayList, LinkedList, and Vector, while Set has several implementations such as HashSet, LinkedHashSet, and TreeSet.
+
+6. Differences between TreeSet and HashSet are as follows:
+
+-> TreeSet is ordered whereas HashSet is unordered.
+-> TreeSet is implemented using a tree structure (red-black tree in Java), whereas HashSet is implemented using a hash table.
+-> TreeSet does not allow duplicate elements, whereas HashSet allows at most one null element and no duplicate elements.
+-> TreeSet provides methods for sorting the elements, whereas HashSet does not provide any direct methods for sorting.
+
+7.  Differences between array and arraylist are as follows:
+
+-> The size of an array is fixed at the time of creation and cannot be changed, while the size of an ArrayList can be changed dynamically as elements are added or removed.
+-> Arrays can store primitive data types as well as objects, while ArrayLists can only store objects.
+-> Array elements can be accessed using their index, which must be an integer, while ArrayList elements can be accessed using their index or their object reference.
+-> Arrays use contiguous memory locations to store their elements, while ArrayLists use a dynamic array structure that can allocate memory as needed.
+-> Arrays can be initialized with values at the time of creation, while ArrayLists require elements to be added one by one using the add() method.

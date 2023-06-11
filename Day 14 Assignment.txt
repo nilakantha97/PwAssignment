@@ -1,0 +1,22 @@
+1. String refers to an object in java present in package called java.lang.String. String refers to collection of characters.
+
+2. There are 2 types of string in java :
+	- Mutable String
+	-Immutable String
+
+3. In Java, there are several ways to create String objects -
+	i) Assigning a string value in " " to a String type variable.
+	Example : String message = "Hello";
+
+	ii) Creating an object of the String class using the new keyword by passing the string value as a parameter of its constructor.
+	Example : String message = new String ("Hello");
+
+4. The string constant pool is a pool of strings stored in the Java heap that is used to manage the memory used by String objects in Java. The string constant pool helps to reduce memory usage by reusing String objects that have the same value, instead of creating a new String object for each instance of a particular string value.
+
+5. Mutable String : 
+		Once if we create a string, on that string if we try to perform any operation and if those changes get  reflected in the same object the such strings are called Mutable String. Ex : StringBuffer, StringBuilder
+
+Immutable String:
+		Once if we create a string, on that string if we try to perform any operation and if those changes won't be reflected  in the same object, rather a new object will be created such type of String is called as Immutable String. Ex: String
+
+6. The string constant pool is located in the heap memory.

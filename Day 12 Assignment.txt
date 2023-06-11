@@ -1,0 +1,34 @@
+1. An array is a data structure in computer programming that stores a collection of elements, each of the same data type, in a contiguous block of memory.
+
+2. We can create an array using the new operator
+Example : int[] numbers = new int[5];
+
+3. No, we cannot change the size of an array in Java once it has been created. Arrays have a fixed size that is determined when they are created and cannot be resized dynamically at runtime.
+
+4. No, we cannot declare an array without specifying its size in Java. Arrays have a fixed size that must be determined when the array is created. The size of an array determines the number of elements that can be stored in the array.
+
+5. The default value of an array in Java depends on the data type of the elements in the array. The default value for each data type is as follows:
+
+Numeric primitive data types (byte, short, int, long, float, double) are set to 0.
+Character primitive data type (char) is set to '\u0000' (the null character).
+Boolean primitive data type (boolean) is set to false.
+Reference data types (e.g., String, Object, and arrays) are set to null.
+
+6. A 1D (One-Dimensional) array is a linear data structure that stores a fixed-size sequential collection of elements of the same data type.
+
+Example: int[] numbers = {1, 2, 3, 4, 5};
+
+7.
+
+public class TwoDArray {
+  public static void main(String[] args) {
+    int[][] numbers = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    
+    for (int i = 0; i < 3; i++) {
+      for (int j = 0; j < 3; j++) {
+        System.out.print(numbers[i][j] + " ");
+      }
+      System.out.println();
+    }
+  }
+}

@@ -1,0 +1,35 @@
+1. If the the memory of the variable is given during the compilation time itself then such types of programming languages are called as statically typed programming languages. Example : C , Java 
+    If the the memory of the variable is given during the execution time itself then such types of programming languages are called as dynamically typed programming languages. Example : JavaScript, Python
+
+2. A variable is the title of a reserved region allocated in memory. It may be referred as the name of a memory location.
+
+3. We assign a value to the variable by specifiying an equal sign and a value.
+
+4. char, byte, short, int, long, float, double and boolean are primitive data types in java.
+
+5. An indentifier is a name given to a package, class, interface, method, or variable.
+
+6. There are 5 types of operators in java:
+	i)Arithmetic Operators
+	ii)Relational Operators
+	iii)Logical Operators
+	iv)Assignment Operators
+	v)Unary Operators
+	vi)Bitwise Operators
+
+7. Increment (++) : Increases value of operand by 1
+    Decrement(--) : Decrease value of operand by 1
+
+Example : 
+
+public class IncrementDecrement {
+    public static void main(String[] args) {
+        int num1=25;
+        System.out.println("Post Increment : "+num1++);
+        System.out.println("Pre Increment : "+(++num1));
+        System.out.println("Post Decrement : "+num1--);
+        System.out.println("Pre Decrement : "+(--num1));
+    }
+}
+
+	

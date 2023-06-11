@@ -1,0 +1,21 @@
+1. A programming language is a computer language that is used by programmers (developers) to communicate with computers. 
+
+2. Programming Language is important in our daily life to enhance and increase the power of computers, mobile solutions, and the internet.
+
+3. Features of Java are : 
+	- object oriented
+	- Platform independent
+	- Secure
+	- Portable
+	- Multi-threaded
+	- Distributed
+	- Robust
+	- Simple
+
+4. An object is an entity with state and behaviour, such as a bus, car, Notebook, bike. It could be intellectual or physical.
+
+5. A class is a collection of items with similar characteristics. It serves as a blueprint from which things can be made.
+
+6. main() method is the starting point for JVM to start execution of Java program. Without main() method JVM will not execute the program. We should use a public keyword before main() method so that JVM        can identify the execution point of the program.
+
+  Syntax : public static void main(String []args)

@@ -1,0 +1,18 @@
+1.By using command "git --version" in command prompt we can check if git is available on our system or not.
+
+2. To initialize a new git repository we run the command: git init
+
+3. By the below commands we can say git about our name and email :
+	git config --global user.name "Nilakantha"
+	git config --global user.email "nilakantha97@gmail.com"
+
+4. By using command "git add filename" or "git add ." we can add a file to staging area from working area.
+
+5. For removing file from staging area we use the below command : git rm --cached filename
+
+6. We can use command "git commit -m <some message>" to make a commit.
+
+7. By using command "git push" we can send the code from local repository to remote repository.
+
+8. - git pull is used to fetch the latest changes made in the remote repository to the working directory
+    -git clone is used to clone the repository to the working directory of the developer.

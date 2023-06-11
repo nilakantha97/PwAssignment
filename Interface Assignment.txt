@@ -1,0 +1,27 @@
+1. An interface is a mechanism in java that is used to achieve complete abstarction. It is like a class that contains only constants and abstract methods. It specifies a set of methods that a class implementing the interface must implement.
+
+2. In an interface, only two access modifiers are allowed for methods: public and default. Public methods in an interface can be accessed by any class in any package that implements that interface. Default methods are only accessible within the same package.
+
+Example : 
+
+public interface MyInterface {
+    public void publicMethod();
+    default void defaultMethod() {
+        // implementation of default method
+    }
+}
+
+
+3. The main use of interfaces in Java is to achieve abstraction and provide a way for multiple classes to implement common methods or behavior.
+
+4. Differences between abstract classes and interfaces:-
+
+-> Abstract classes can have both abstract and non-abstract methods, while interfaces can only have abstract methods.
+
+-> A class can only extend one abstract class, but can implement multiple interfaces.
+
+-> Abstract classes can have constructors, while interfaces cannot.
+
+-> Abstract classes can have instance variables, while interfaces cannot. Interfaces can only have constants (static final variables).
+
+-> Abstract classes are used when you have a common set of functionality that you want to share among several related classes. Interfaces are used when you want to specify a set of methods that a class must implement.

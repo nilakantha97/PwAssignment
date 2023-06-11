@@ -1,0 +1,22 @@
+1. In Java, we can create an object of a class using the new operator followed by the class name and parentheses ().
+
+Syntax : ClassName objectName = new ClassName();
+
+2. The new keyword in Java is used to dynamically allocate memory for creating an instance of an object.
+
+3. There are two Types of variables in java
+	i)Primitive variables
+	ii)Reference variables
+
+4. Instance variables:
+Instance variables are declared within a class, but outside of any method or constructor, and are created when an object of the class is created.
+Instance variables have a default value and are accessible from any method or constructor within the class.
+
+Local variables:
+Local variables are declared within a method or a constructor, and are only accessible within that method or constructor.
+Local variables do not have a default value, and must be explicitly initialized before they can be used.
+
+5. Instance variables are stored on the heap as the part of the object while Local variables are stored inside the stack.
+
+6. If multiple methods have same name but different parameters we call it method overloading.
+

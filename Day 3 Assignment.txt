@@ -1,0 +1,23 @@
+1. Git is a distributed version control system that tracks changes in any set of computer files, usually used for coordinating work among programmers collaboratively developing source code during software development.
+
+2. Version Control System (VCS) is a system that records changes to a file or set of files over time, so that we can recall specific versions later, i.e. for every source code changes in a file a new version will be created.
+
+3. GitHub is an Internet hosting service for software development and version control using Git.
+
+4. Some popular git hosting services are Bitbucket, GitLab, Perforce, Beanstalk, Codebase
+
+5. There are 3 types of Version Control System
+	- Local Version Control System
+	- Centralised Version Control System
+	- Distributed Version Control System
+
+6. Benefits with git are :
+	i) Git performs very strongly and reliably when compared to other version control systems.
+	ii) Git is designed specially to maintain the integrity of source code.
+	iii) A key design objective of Git is the kind of flexibility it offers to support several kinds of nonlinear development workflows and its efficiency in handling both small scale and large scale projects as well as protocols.
+	iv) Git offers the type of performance, functionality, security, and flexibility that most developers and teams need to develop their projects.
+
+7. In Git, the repository is like a data structure used by VCS to store metadata for a set of files and directories. It contains the collection of the files as well as the history of changes made to those files. Repository in Git is considered as your project folder. A repository has all the project-related data. Distinct projects have distinct repositories.
+
+8. To initialize a repository in git we run the command:
+$ git init

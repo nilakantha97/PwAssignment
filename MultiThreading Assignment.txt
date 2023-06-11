@@ -1,0 +1,50 @@
+1. Multithreading refers to the ability of a program to perform multiple tasks concurrently within a single process. It is important because it enables a program to perform multiple tasks concurrently without causing the system to become unresponsive or slow. It can improve the responsiveness and efficiency of user interfaces, and help manage system resources more effectively.
+
+2. The benefits of using multithreading in a program are:
+
+-> Increased performance: Multithreading can increase the performance of a program by allowing it to perform multiple tasks simultaneously.
+
+-> Responsiveness: Multithreading can improve the responsiveness of a program by allowing it to continue to process user input while executing background tasks.
+
+-> Resource utilization: Multithreading can improve the utilization of system resources by allowing different threads to share the same resources, such as memory, CPU time, and I/O devices.
+
+3. a thread is a lightweight sub-process that runs concurrently with other threads within a process. Each thread in Java has its own call stack, but they all share the same memory space. By using multiple threads, a program can perform multiple tasks simultaneously, leading to increased performance and better resource utilization.
+
+4. Threads can be created in Java by either extending the Thread class or implementing the Runnable interface.
+
+5. Differences between threads and processes:
+
+->A process is an independent program that has its own memory space, whereas a thread is a unit of a process that can run concurrently with other threads of the same process, sharing the same memory space.
+
+-> Threads of the same process share the same memory space, while each process has its own memory space.
+
+-> Creating a new process is generally more expensive than creating a new thread, due to the overhead of allocating memory and setting up communication channels.
+
+-> Processes can be more scalable than threads, as they can be distributed across multiple machines, while threads are limited to the resources of a single machine.
+
+6. A daemon thread is a low-priority thread that runs in the background, performing tasks such as garbage collection. You can create a daemon thread in Java by using the setDaemon() method of the Thread class.
+
+Example : 
+
+public class MyDaemonThread implements Runnable {
+
+    public void run() {
+        while (true) {
+            // do some background task
+        }
+    }
+
+    public static void main(String[] args) {
+        Thread t = new Thread(new MyDaemonThread());
+        t.setDaemon(true);
+        t.start();
+        // main thread continues
+    }
+}
+
+
+7.  wait() and sleep() are methods related to thread synchronization and execution control.
+
+->The wait() method is used to make a thread wait for a certain condition to be satisfied. This method is usually called inside a synchronized block or method. 
+
+->The sleep() method is used to make a thread pause for a specified amount of time. When a thread executes sleep(), it does not release any locks, and will resume execution after the specified time has passed. 
